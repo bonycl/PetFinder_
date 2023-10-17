@@ -11,7 +11,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-//MARK: - SetUp window, scene, view
+    //MARK: - SetUp window, scene, view
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         //1. Захват сцены
@@ -28,6 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         //3. Создаем базовый контроллер
         window.rootViewController = navigation
+        
         
         //4. Настройка window 
         self.window = window

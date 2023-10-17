@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class RegisterController: UIViewController {
     
@@ -42,7 +43,10 @@ class RegisterController: UIViewController {
         self.signInButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.navigationBar.isHidden = true
+    }
     
     //MARK: - adding views
     private func setupUI() {
@@ -107,7 +111,11 @@ class RegisterController: UIViewController {
     //MARK: - Mark selectors
     @objc func didTapSignUp() {
         print("DEBUG PRINT:", "didTapSignUn")
+        let webViewer = WebViewerViewController(with:"https://www.apple.com/legal/sla/docs/xcode.pdf")
         
+        
+        let nav = UINavigationController(rootViewController: webViewer)
+        self.present(nav, animated: true, completion: nil)
     }
     @objc func didTapSignIn() {
         print("DEBUG PRINT:", "didTapSignIn")

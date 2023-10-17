@@ -12,7 +12,7 @@ class LoginController: UIViewController {
     
     //MARK: - UI Components
     
-    private let headerView = AuthHeaderView(title: "Hello,\n welcome back!", subTitle: "Animals is a life. Animals is a basic human need. In various lines of life, humans need animals.")
+    private let headerView = AuthHeaderView(title: "Hello,\n welcome back!", subTitle: "Animals are a life. Animals are a basic human need. In various lines of life, humans need animals.")
     
     private let usernameField = CustomTextField(fieldType: .username)
     private let passwordField = CustomTextField(fieldType: .password)
@@ -33,7 +33,7 @@ class LoginController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.isHidden = true
         
         
     }
