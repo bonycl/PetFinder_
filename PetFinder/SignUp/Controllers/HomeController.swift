@@ -26,6 +26,7 @@ class HomeController: UITableViewController {
         super.viewDidLoad()
         self.setupUI()
         
+        
         logOutAnimations()
         
     }
@@ -38,13 +39,21 @@ class HomeController: UITableViewController {
         
         self.view.addSubview(label)
         
+    //MARK: - Constrains
         label.snp.makeConstraints { make in
             make.centerX.equalTo(self.view)
             make.centerY.equalTo(self.view.center).inset(230)
         }
     }
+    
     @objc private func didTapLogOut() {
-        
+        let vc = LoginController()
+        self.navigationController?.pushViewController(vc, animated: true)
+
+//        let nav = UINavigationController(rootViewController: vc)
+//        nav.modalPresentationStyle = .fullScreen
+//        self.present(nav, animated: true, completion: nil)
+//    
     }
 //MARK: - LogOut text animation
     private func logOutAnimations() {

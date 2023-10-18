@@ -118,11 +118,14 @@ class RegisterController: UIViewController {
     }
     //MARK: - selectors
     @objc func didTapSignUp() {
-
+        let vc = LoginController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        //self.navigationController?.popToRootViewController(animated: true)
     }
     @objc func didTapSignIn() {
         print("DEBUG PRINT:", "didTapSignIn")
-        self.navigationController?.popToRootViewController(animated: true)
+        let vc = LoginController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
