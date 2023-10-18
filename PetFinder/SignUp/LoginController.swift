@@ -87,12 +87,13 @@ class LoginController: UIViewController {
        
         
     }
-    //MARK: - Mark selectors
+    //MARK: - selectors
     @objc private func didTapSignIn() {
         print("DEBUG PRINT:", "didTapSignIn")
-        let vc = TableViewController()
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
+        let vc = HomeController()
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true, completion: nil)
     }
     @objc private func didTapNewUser() {
         print("DEBUG PRINT:", "didTapNewUser")

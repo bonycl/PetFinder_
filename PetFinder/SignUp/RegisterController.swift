@@ -116,7 +116,7 @@ class RegisterController: UIViewController {
             make.height.equalTo(44)
         }
     }
-    //MARK: - Mark selectors
+    //MARK: - selectors
     @objc func didTapSignUp() {
 
     }

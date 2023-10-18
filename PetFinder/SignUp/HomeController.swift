@@ -8,22 +8,58 @@
 import UIKit
 
 class HomeController: UITableViewController {
-
+    
+    //MARK: - UI Components
+    private let label: UILabel = {
+        let label = UILabel()
+        label.textColor = .label
+        label.textAlignment = .center
+        label.font = .systemFont(ofSize: 30, weight: .semibold)
+        label.text = "Loading..."
+        label.numberOfLines = 3
+        
+        return label
+    }()
+    //MARK: - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemGray
+        self.setupUI()
+        
+        logOutAnimations()
+        
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    // MARK: - UI Setup
+    private func setupUI() {
+        self.view.backgroundColor = .systemBackground
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(didTapLogOut))
+        
+        self.view.addSubview(label)
+        
+        label.snp.makeConstraints { make in
+            make.centerX.equalTo(self.view)
+            make.centerY.equalTo(self.view.center).inset(230)
+        }
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    @objc private func didTapLogOut() {
+        
     }
+//MARK: - LogOut text animation
+    private func logOutAnimations() {
+        label.text = ""
+        var charIndex = 0.0
+        //creating a loop for animate a label
+        let titleText = " 🐶 🐨 🐰\n 🐹 🐼 🐮\n 🐴 🐯 🐑"
 
+        for letter in titleText {
+            //using timer. *charIndex is a implementation of additional pause
+            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { timer in
+                self.label.text?.append(letter)
+
+            }
+            charIndex += 1
+        }
+    }
 }

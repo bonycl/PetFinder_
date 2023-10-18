@@ -15,7 +15,7 @@
 		029E444D2ADD361500796B38 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E444C2ADD361500796B38 /* AuthHeaderView.swift */; };
 		029E448B2ADD84D500796B38 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E448A2ADD84D500796B38 /* CustomTextField.swift */; };
 		029E448F2ADD96EA00796B38 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E448E2ADD96EA00796B38 /* CustomButton.swift */; };
-		029E44912ADE565E00796B38 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E44902ADE565E00796B38 /* TableViewController.swift */; };
+		029E44912ADE565E00796B38 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E44902ADE565E00796B38 /* HomeController.swift */; };
 		029E44932ADE848B00796B38 /* WebViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E44922ADE848B00796B38 /* WebViewerViewController.swift */; };
 		5873E3A02ADB190200F51501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873E39F2ADB190200F51501 /* AppDelegate.swift */; };
 		5873E3A22ADB190200F51501 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873E3A12ADB190200F51501 /* SceneDelegate.swift */; };
@@ -34,7 +34,7 @@
 		029E444C2ADD361500796B38 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		029E448A2ADD84D500796B38 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		029E448E2ADD96EA00796B38 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		029E44902ADE565E00796B38 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		029E44902ADE565E00796B38 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		029E44922ADE848B00796B38 /* WebViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewerViewController.swift; sourceTree = "<group>"; };
 		315C23E2AA7CC7CA463BE81C /* Pods-PetFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetFinder.release.xcconfig"; path = "Target Support Files/Pods-PetFinder/Pods-PetFinder.release.xcconfig"; sourceTree = "<group>"; };
 		5873E39C2ADB190200F51501 /* PetFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +63,7 @@
 		022C387C2ADCFAF80056B7C5 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				029E44902ADE565E00796B38 /* TableViewController.swift */,
+				029E44902ADE565E00796B38 /* HomeController.swift */,
 				029E44402ADD010300796B38 /* LoginController.swift */,
 				029E44492ADD2F3E00796B38 /* RegisterController.swift */,
 				029E44422ADD2E4800796B38 /* ForgotPasswordViewController.swift */,
@@ -271,7 +271,7 @@
 				029E44482ADD2F1300796B38 /* NewPasswordViewController.swift in Sources */,
 				029E448F2ADD96EA00796B38 /* CustomButton.swift in Sources */,
 				5873E3A02ADB190200F51501 /* AppDelegate.swift in Sources */,
-				029E44912ADE565E00796B38 /* TableViewController.swift in Sources */,
+				029E44912ADE565E00796B38 /* HomeController.swift in Sources */,
 				029E44932ADE848B00796B38 /* WebViewerViewController.swift in Sources */,
 				029E444D2ADD361500796B38 /* AuthHeaderView.swift in Sources */,
 				5873E3A22ADB190200F51501 /* SceneDelegate.swift in Sources */,
