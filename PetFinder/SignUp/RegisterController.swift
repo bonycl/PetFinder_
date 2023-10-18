@@ -18,7 +18,6 @@ class RegisterController: UIViewController {
     private let emailField = CustomTextField(fieldType: .email)
     private let passwordField = CustomTextField(fieldType: .password)
     private let passwordRepeatField = CustomTextField(fieldType: .password)
-    
     private let newUserButton = CustomButton(title: "Sing Up",hasBackground: true, fontSize: .big)
     private let signInButton = CustomButton(title: "Already have an account? Sign In", fontSize: .mid)
     
@@ -71,7 +70,7 @@ class RegisterController: UIViewController {
         self.view.addSubview(termsTextView)
         self.view.addSubview(newUserButton)
         
-        //MARK: - constrains
+    //MARK: - constrains
         headerView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(20)
             make.left.right.equalToSuperview().inset(10)
@@ -142,6 +141,7 @@ extension RegisterController: UITextViewDelegate {
         
         return true
     }
+    
     private func showWebViewerController(with urlString: String) {
         let vc = WebViewerViewController(with: urlString)
         let nav = UINavigationController(rootViewController: vc)

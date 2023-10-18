@@ -21,7 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         let vc = LoginController()
-        //let vc = RegisterController()
+//        let vc = ForgotPasswordViewController()
+        
         
         let navigation = UINavigationController(rootViewController: vc)
         navigation.modalPresentationStyle = .fullScreen
