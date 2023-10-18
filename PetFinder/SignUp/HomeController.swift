@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class HomeController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
