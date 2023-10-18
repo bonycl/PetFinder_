@@ -10,7 +10,7 @@ import UIKit
 class ForgotPasswordViewController: UIViewController {
     
     //MARK: - UI Components
-    private let headerView = AuthHeaderView(title: "Forgot Password", subTitle: "Animals are a life. Animals are a basic human need. In various lines of life, humans need animals.")
+    private let headerView = AuthHeaderView(title: "Forgot a Password?", subTitle: "Animals are a life. Animals are a basic human need. In various lines of life, humans need animals.")
     private let emailField = CustomTextField(fieldType: .email)
     private let resetPasswordButton = CustomButton(title: "Next", hasBackground: true, fontSize: .big)
     

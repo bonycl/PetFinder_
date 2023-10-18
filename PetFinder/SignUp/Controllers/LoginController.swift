@@ -12,7 +12,7 @@ class LoginController: UIViewController {
     
     //MARK: - UI Components
     
-    private let headerView = AuthHeaderView(title: "Hello,\n welcome back!", subTitle: "Animals are a life. Animals are a basic human need. In various lines of life, humans need animals.")
+    private let headerView = AuthHeaderView(title: "Hello,\nwelcome back!", subTitle: "Animals are a life. Animals are a basic human need. In various lines of life, humans need animals.")
     
     private let userEmailField = CustomTextField(fieldType: .email)
     private let passwordField = CustomTextField(fieldType: .password)

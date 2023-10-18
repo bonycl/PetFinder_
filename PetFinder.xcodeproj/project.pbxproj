@@ -67,6 +67,7 @@
 		022C387C2ADCFAF80056B7C5 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				029E44442ADD2EA400796B38 /* PasswordRecovery */,
 				029E44952ADFE3A800796B38 /* AlertManager.swift */,
 				029E44942ADFE32B00796B38 /* Controllers */,
 				029E444B2ADD35E200796B38 /* Views */,
@@ -147,7 +148,6 @@
 			children = (
 				D86EA8822ADBCA8E00B8D961 /* Del */,
 				022C387C2ADCFAF80056B7C5 /* SignUp */,
-				029E44442ADD2EA400796B38 /* PasswordRecovery */,
 				5873E3A82ADB190600F51501 /* Assets.xcassets */,
 				5873E3AA2ADB190600F51501 /* LaunchScreen.storyboard */,
 				5873E3AD2ADB190600F51501 /* Info.plist */,
