@@ -24,6 +24,11 @@ class ForgotPasswordViewController: UIViewController {
         self.resetPasswordButton.addTarget(self, action: #selector(didTapNext), for: .touchUpInside)
 
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.navigationBar.isHidden = false 
+        
+    }
 
     //MARK: - UI setup
     private func setupUI() {

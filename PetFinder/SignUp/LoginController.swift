@@ -14,7 +14,7 @@ class LoginController: UIViewController {
     
     private let headerView = AuthHeaderView(title: "Hello,\n welcome back!", subTitle: "Animals are a life. Animals are a basic human need. In various lines of life, humans need animals.")
     
-    private let usernameField = CustomTextField(fieldType: .username)
+    private let userEmailField = CustomTextField(fieldType: .email)
     private let passwordField = CustomTextField(fieldType: .password)
     
     private let signInButton = CustomButton(title: "Sign In",hasBackground: true, fontSize: .big)
@@ -44,7 +44,7 @@ class LoginController: UIViewController {
         self.view.backgroundColor = .systemBackground
         
         self.view.addSubview(headerView)
-        self.view.addSubview(usernameField)
+        self.view.addSubview(userEmailField)
         self.view.addSubview(passwordField)
         
         self.view.addSubview(signInButton)
@@ -57,7 +57,7 @@ class LoginController: UIViewController {
             make.left.right.equalToSuperview().inset(10)
         }
         
-        usernameField.snp.makeConstraints { make in
+        userEmailField.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(15)
             make.top.equalTo(headerView.snp.bottom).offset(250)
             make.height.equalTo(44)
@@ -65,7 +65,7 @@ class LoginController: UIViewController {
         
         passwordField.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(15)
-            make.top.equalTo(usernameField.snp.bottom).offset(6)
+            make.top.equalTo(userEmailField.snp.bottom).offset(6)
             make.height.equalTo(44)
         }
         
