@@ -45,7 +45,7 @@ class HomeController: UITableViewController {
             make.centerY.equalTo(self.view.center).inset(230)
         }
     }
-    
+    //objc
     @objc private func didTapLogOut() {
         let vc = LoginController()
         self.navigationController?.pushViewController(vc, animated: true)
